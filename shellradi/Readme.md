@@ -5,7 +5,7 @@
    
   with focus on [web security](https://portswigger.net/support/using-burp-to-test-for-the-owasp-top-ten)
    
-   <i> starting 1st feb </i>
+  
       
       
 
@@ -15,9 +15,7 @@
       
       
       
-   ##  Below is a list of some of the things that I will be going through(not limited to it) my 15DaysOfHacking and my experience throughout the journey.
-   
-   
+   ##  Below is a list of some of the things that I will be going through and my experience throughout the 15days journey(not limited to it) 
 
 <b> Resources </b>
       
@@ -27,6 +25,13 @@
    [portswigger](https://portswigger.net/web-security)
    
    [tryhackme](https://tryhackme.com/room/webfundamentals)
+   
+   <br>
+     
+   --starting 1st feb
+   
+   
+   Day1  [Burpsuite](https://tryhackme.com/room/rpburpsuite)
    
    
  </p>  </body>
