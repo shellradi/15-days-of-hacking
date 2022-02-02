@@ -255,4 +255,77 @@ Scanner - Automated web vulnerability scanner that can highlight areas of the ap
  <i> ans: no answer needed </i>
  
  <br><br><br>
+ 
+ ### Task 6 Proxy 
+ 
+ Generally speaking, proxy servers by definition allow us to relay our traffic through an alternative route to the internet. This can be done for a variety of reasons ranging from educational filtering (common in schools where restricted content must be blocked) to accessing content that may be otherwise unavailable due to region locking or a ban. Using a proxy, however, for web application testing allows us to view and modify traffic inline at a granular level. Throughout this task, we'll explore the major components of the Burp proxy including interception, request history, and the various configuration options we have access to. 
+ 
+ 
+ <br>![image](https://user-images.githubusercontent.com/41240719/152172403-e62df214-6298-4ff3-92b2-641adf466075.png)
+<br>
 
+Basic diagram of how communications are relayed through a proxy 
+ 
+ we configured our web traffic to route through our instance of Burp Suite. By default, Burp will be set to 'intercept' our traffic. This means a few things:
+
+1. Requests will by default require our authorization to be sent.
+
+2. We can modify our requests in-line similar to what you might see in a man-in-the-middle attack and then send them on.
+
+3. We can also drop requests we don't want to be sent. This can be useful to see the request attempt after clicking a button or performing another action on the website. 
+
+4. And last but not least, we can send these requests to other tools such as Repeater and Intruder for modification and manipulation to induce vulnerabilities.
+ 
+ ### To complete this task you need to connect to the TryHackMe network through OpenVPN. 
+ <i> ans: no answer needed </i>
+ 
+ 
+
+###  By default, the Burp Suite proxy listens on only one interface. What is it? Use the format of IP:PORT
+ <i> ans: 127.0.0.1:8080</i>
+ 
+
+ ### In Burp Suite, navigate to the Intercept sub-tab of the Proxy section. Enable Intercept
+ <i> ans: no answer needed </i>
+ 
+ 
+ ### Return to your web browser and navigate to the web application hosted on the VM we deployed just a bit ago. Note that the page appears to be continuously loading. Change back to Burp Suite, we now have a request that's waiting in our intercept tab. Take a look at the actions, which shortcut allows us to forward the request to Repeater?
+ 
+  <i> ans: CTRL-R </i>
+ 
+ 
+
+ ### How about if we wanted to forward our request to Intruder?
+  <i> ans: CTRL-I </i>
+ 
+ 
+ 
+ ### 
+
+Burp Suite saves the history of requests sent through the proxy along with their varying details. This can be especially useful when we need to have proof of our actions throughout a penetration test or we want to modify and resend a request we sent a while back. What is the name of the first section wherein general web requests (GET/POST) are saved?
+<i> ans: HTTP history </i>
+ 
+ 
+ 
+ ### Defined in RFC 6455 as a low-latency communication protocol that doesn't require HTTP encapsulation, what is the name of the second section of our saved history in Burp Suite? These are commonly used in collaborate application which require real-time updates (Google Docs is an excellent example here).
+ <i> ans: WebSockets history </i>
+ 
+ 
+ ###  Before we move onto exploring our target definition, let's take a look at some of the advanced customization we can utilize in the Burp proxy. Move over to the Options section of the Proxy tab and scroll down to Intercept Client Requests. Here we can apply further fine-grained rules to define which requests we would like to intercept. Perhaps the most useful out of the default rules is our only AND rule. What is it's match type?
+ 
+ <i> ans: URL </i>
+ 
+ 
+ ###  How about it's 'Relationship'? In this situation, enabling this match rule can be incredibly useful following target definition as we can effectively leave intercept on permanently (unless we need to navigate without intercept) as it won't disturb sites which are outside of our scope - something which is particularly nice if we need to Google something in the same browser.
+ 
+  
+ <i> ans: Is in target scope </i>
+ 
+
+
+ 
+ 
+ 
+ 
+
+ 
