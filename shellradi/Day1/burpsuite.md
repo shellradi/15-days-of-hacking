@@ -197,7 +197,54 @@ Scanner - Automated web vulnerability scanner that can highlight areas of the ap
  <i> ans: extender </i>
  <br>
  
-
-
+<br><br>
  
+ 
+ 
+ ## Task 5 Engage Dark Mode 
+ 
+ 
+![image](https://user-images.githubusercontent.com/41240719/152168835-a2d8f3b7-2c2f-41f6-a996-37d59342a141.png)
+ 
+ <br>
+
+ ### With Burp Suite launched, let's first navigate to the 'User options' tab. 
+ <br>
+ 
+ ![image](https://user-images.githubusercontent.com/41240719/152169122-3faa10e6-84e2-4d42-a63b-6661568a71cb.png)
+ 
+<br>
+ 
+<i> ans: no answer needed </i>
+ 
+ <br>
+ 
+ 
+
+### Next, click on the 'Display' sub-tab. 
+ 
+ 
+ ![image](https://user-images.githubusercontent.com/41240719/152169495-fd77e1a0-7948-44bd-b36b-bf8e47e36eb6.png)
+ 
+ <i> ans: no answer needed </i>
+
+
+ <br>
+ 
+
+### Now, click on the 'Look and feel' drop-down menu. Select 'Darcula'. 
+ <br>
+ 
+ ![image](https://user-images.githubusercontent.com/41240719/152170018-a503cff4-4bf6-49c5-a926-3a077f70e93a.png)
+ 
+  <i> ans: no answer needed </i>
+
+<br>
+ 
+
+### Finally, close and relaunch Burp Suite to have dark theme (or whichever theme you picked) take effect.
+ 
+ <i> ans: no answer needed </i>
+ 
+ <br><br><br>
 
